@@ -1,0 +1,68 @@
+/* Green palette */
+/* https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46 */
+
+:root {
+  --clr-black: #000300;
+  --clr-white: #edf3ee;
+  --clr-green-reg: #52796F;
+  --clr-green-lightish: #84A98C;
+  --clr-green-darkish: #354F52;
+  --clr-green-light: #CAD2C5;
+  --clr-green-dark: #2F3E46;
+
+  --ff-body: "sans-serif";
+  --ff-heading: "Helvetica";
+  --ff-title: "Arial";
+
+  --fs-xl: 5rem;
+  --fs-lg: 3rem;
+  --fs-med: 2.5rem;
+  --fs-sm: 2rem;
+  --fs-600: 1.125rem;
+  --fs-400: .875rem;
+  --fs-200: .625rem;
+}
+
+/* custom fonts here */
+
+/* CSS utility classes */
+.container {
+  /* border: 1px solid cyan; */
+  max-width: 65em;
+  margin: auto;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    /* color: white; */
+    /* background: black; */
+    color: var(--clr-white);
+    background: var(--clr-green-dark);
+  }
+}
