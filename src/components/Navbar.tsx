@@ -34,7 +34,7 @@ const Navbar = () => {
               <IconMoonStars size={30} />
             )}
           </button>
-          {/* <h1 className={sx.name}>Daniel Villegas</h1> */}
+
           <h1 className={sx.name}>
             <Link href="/">Daniel Villegas</Link>
           </h1>
@@ -71,21 +71,27 @@ const Navbar = () => {
               <li
                 className={`${router.pathname === "/" && sx["current-link"]}`}
               >
-                <Link href="/">Home</Link>
+                <Link href="/">
+                  <a onClick={() => setBurger(true)}>Home</a>
+                </Link>
               </li>
               <li
                 className={`${
                   router.pathname === "/about" && sx["current-link"]
                 }`}
               >
-                <Link href="/about">About Me</Link>
+                <Link href="/about">
+                  <a onClick={() => setBurger(true)}>About Me</a>
+                </Link>
               </li>
               <li
                 className={`${
                   router.pathname === "/contact" && sx["current-link"]
                 }`}
               >
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact">
+                  <a onClick={() => setBurger(true)}>Contact</a>
+                </Link>
               </li>
             </div>
 
@@ -96,6 +102,7 @@ const Navbar = () => {
                   href="https://github.com/avilldaniel"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => setBurger(true)}
                 >
                   <IconBrandGithub size={32} />
                 </a>
@@ -105,6 +112,7 @@ const Navbar = () => {
                   href="https://www.linkedin.com/in/daniel-villegas-aira"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => setBurger(true)}
                 >
                   <IconBrandLinkedin size={32} />
                 </a>

@@ -34,6 +34,12 @@
   margin: auto;
 }
 
+.content {
+  border: 1px solid yellowgreen;
+  padding: 0 6em;
+  min-height: 30em;
+}
+
 html,
 body {
   padding: 0;
@@ -55,6 +61,7 @@ ul {
   box-sizing: border-box;
 }
 
-.container button:hover {
+.container button:hover,
+.container a:hover {
   color: var(--clr-green-lightish);
 }

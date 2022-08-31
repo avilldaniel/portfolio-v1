@@ -4,8 +4,7 @@
 }
 
 /* Hovers */
-.content .name:hover,
-.content li:hover {
+.content .name:hover {
   color: var(--clr-green-lightish);
 }
 
@@ -27,6 +26,13 @@
   cursor: pointer;
 
   display: flex;
+
+  /* transition for hover */
+  transition: 500ms transform cubic-bezier(.68, -0.55, .27, 1.55);
+}
+
+.theme-toggle-btn:hover {
+  transform: rotate(-180deg);
 }
 
 .nav {
@@ -48,10 +54,6 @@
     font-size: var(--fs-lg);
     text-align: center;
     line-height: 1.4em;
-
-    /* Transform nav-menu out of viewport */
-    transform: translateY(10%);
-    transition: transform 350ms ease-out;
   }
 
   .nav-open {
@@ -163,15 +165,15 @@
     justify-content: space-between;
   }
 
-  .socials {
-    /* border: 1px solid yellow; */
-    display: flex;
-    margin-top: -.4em;
-  }
-
   .current-link {
     border-bottom: 4px solid var(--clr-green-lightish);
     border-radius: 2px;
     padding-bottom: 10px;
+  }
+
+  .socials {
+    /* border: 1px solid yellow; */
+    display: flex;
+    margin-top: -.4em;
   }
 }

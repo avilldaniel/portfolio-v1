@@ -1,0 +1,36 @@
+.main {
+  border-top: 1px solid var(--clr-gray-reg);
+  padding-top: 10px;
+
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.copyright {
+  width: 15.5em;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.copyright a {
+  text-decoration: underline;
+  padding: 0;
+}
+
+.socials>a {
+  margin-inline-start: 1rem;
+}
+
+@media (max-width: 560px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+  }
+}
