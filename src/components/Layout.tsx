@@ -18,7 +18,8 @@ const Layout = ({ children }: ILayout) => {
       document.body.style.backgroundColor = "#2F3E46";
       document.body.style.color = "#edf3ee";
     } else {
-      document.body.style.backgroundColor = "#CAD2C5";
+      // document.body.style.backgroundColor = "#CAD2C5";
+      document.body.style.backgroundColor = "#fff7f0";
       document.body.style.color = "#000300";
     }
     document.body.style.colorScheme = theme;
