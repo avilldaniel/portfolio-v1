@@ -1,8 +1,11 @@
 import Link from "next/link";
 import sx from "../styles/Nav.module.css";
 import { useMyStore } from "../utils/zustand-store";
+import { IconMoonStars, IconSun } from "@tabler/icons";
 
 const Navbar = () => {
+  const theme = useMyStore((state) => state.theme);
+  const setTheme = useMyStore((state) => state.setTheme);
   const burger = useMyStore((state) => state.burger);
   const setBurger = useMyStore((state) => state.setBurger);
 
@@ -11,20 +14,32 @@ const Navbar = () => {
       <header className={sx.content}>
         {/* Light/dark toggle + Hamburger || Name */}
         <section className={sx["theme-toggle-layer"]}>
-          <button>Theme</button>
-
+          <button
+            className={sx["theme-toggle-btn"]}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "dark" ? (
+              <IconSun size={30} />
+            ) : (
+              <IconMoonStars size={30} />
+            )}
+          </button>
           <h1 className={sx.name}>Daniel Villegas</h1>
 
           <button
             className={`
-              ${sx["toggle-btn"]}
+              ${sx["burger-toggle-btn"]}
               ${!burger && sx["nav-open"]}
+              ${theme === "light" && sx["light-theme-hamburger"]}
             `}
             onClick={() => setBurger(!burger)}
             aria-controls={sx.nav}
             aria-expanded={burger ? "false" : "true"}
           >
-            <span className={sx.hamburger}></span>
+            <span
+              className={`
+                ${sx.hamburger}`}
+            ></span>
             {/* Invisible menu for accessibility */}
             <span style={{ display: "none" }}>Menu</span>
           </button>
@@ -55,7 +70,6 @@ const Navbar = () => {
                 href="https://github.com/avilldaniel"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "white" }}
               >
                 GitHub icon
               </a>
@@ -65,7 +79,6 @@ const Navbar = () => {
                 href="https://www.linkedin.com/in/daniel-villegas-aira"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "white" }}
               >
                 LinkedIn icon
               </a>
