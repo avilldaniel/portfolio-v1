@@ -1,6 +1,12 @@
 .content {
   margin: auto;
-  width: 90%;
+  width: 100%;
+}
+
+/* Hovers */
+.content .name:hover,
+.content li:hover {
+  color: var(--clr-green-lightish);
 }
 
 .theme-toggle-layer {
@@ -8,6 +14,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.theme-toggle-layer h1 {
+  font-family: var(--ff-title);
+  font-size: var(--fs-sm);
 }
 
 .theme-toggle-btn {
@@ -21,7 +32,6 @@
 .nav {
   /* border: 1px solid cyan; */
   display: none;
-
   font-family: var(--ff-title);
 }
 
@@ -30,13 +40,14 @@
 }
 
 /* Mobile */
-@media (max-width: 35em) {
+/* @media (max-width: 35em) { */
+@media (max-width: 560px) {
   .nav {
     margin-top: .5em;
 
     font-size: var(--fs-lg);
     text-align: center;
-    line-height: 1.2em;
+    line-height: 1.4em;
 
     /* Transform nav-menu out of viewport */
     transform: translateY(10%);
@@ -50,6 +61,11 @@
 
   .name {
     display: none;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
   }
 
   .burger-toggle-btn {
@@ -92,6 +108,13 @@
     top: 6px;
   }
 
+  /* Hamburger hover */
+  .burger-toggle-btn:hover .hamburger,
+  .burger-toggle-btn:hover .hamburger::before,
+  .burger-toggle-btn:hover .hamburger::after {
+    background-color: var(--clr-green-lightish);
+  }
+
   /*****************************************/
   /* Animate hamburger when nav is toggled */
 
@@ -109,14 +132,46 @@
 
   /*****************************************/
   /* Change hamburger color based on theme */
-  .light-theme-hamburger .hamburger, .light-theme-hamburger .hamburger::before, .light-theme-hamburger .hamburger::after {
-    /* border: 1px solid var(--clr-black); */
-    /* border-color: black; */
+  .light-theme-hamburger .hamburger,
+  .light-theme-hamburger .hamburger::before,
+  .light-theme-hamburger .hamburger::after {
     background-color: var(--clr-black);
-
-    /* border: 2px solid var(--clr-black); */
-    /* border-radius: 17px; */
   }
 
   /*****************************************/
+}
+
+@media (min-width: 561px) {
+  .nav {
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 1.3em;
+    border-bottom: 3px solid var(--clr-gray-reg);
+    font-size: var(--fs-600);
+
+    position: relative;
+  }
+
+  .nav-links {
+    /* border: 1px solid yellow; */
+    width: 14em;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .socials {
+    /* border: 1px solid yellow; */
+    display: flex;
+    margin-top: -.4em;
+  }
+
+  .current-link {
+    border-bottom: 4px solid var(--clr-green-lightish);
+    border-radius: 2px;
+    padding-bottom: 10px;
+  }
 }

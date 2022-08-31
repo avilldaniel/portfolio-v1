@@ -1,0 +1,10 @@
+.bio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bio summary {
+  flex-basis: 70%;
+}
+
+.pic {}

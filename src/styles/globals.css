@@ -9,6 +9,8 @@
   --clr-green-darkish: #354F52;
   --clr-green-light: #CAD2C5;
   --clr-green-dark: #2F3E46;
+  --clr-gray-reg: #59656b;
+  --clr-gray-light: #7a8489;
 
   --ff-body: "sans-serif";
   --ff-heading: "Helvetica";
@@ -28,13 +30,8 @@
 /* CSS utility classes */
 .container {
   /* border: 1px solid cyan; */
-  max-width: 65em;
+  max-width: 60em;
   margin: auto;
-}
-
-.dark-theme {
-  /* color: var(--clr-white); */
-  /* background: var(--clr-green-dark); */
 }
 
 html,
@@ -58,13 +55,6 @@ ul {
   box-sizing: border-box;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-
-  body {
-    color: var(--clr-white);
-    background: var(--clr-green-dark);
-  }
-} */
+.container button:hover {
+  color: var(--clr-green-lightish);
+}
