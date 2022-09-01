@@ -36,7 +36,7 @@
 }
 
 .content {
-  border: 1px solid yellowgreen;
+  /* border: 1px solid yellowgreen; */
   padding: 0 6em;
   min-height: 30em;
 }

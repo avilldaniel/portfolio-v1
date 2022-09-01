@@ -45,8 +45,11 @@ const about = () => {
             {/* Red */}
             <article style={{ background: "#EF476F" }}>Git</article>
             <article style={{ background: "#EF476F" }}>AWS</article>
-            <article style={{ background: "#EF476F" }}>
+            {/* <article style={{ background: "#EF476F" }}>
               Serverless Functions
+            </article> */}
+            <article style={{ background: "#EF476F" }}>
+              Serverless | CDN
             </article>
 
             {/* White */}
