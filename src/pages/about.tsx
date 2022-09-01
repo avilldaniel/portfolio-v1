@@ -7,36 +7,71 @@ const about = () => {
       <section className={sx.bio}>
         <summary>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora at
-            repellat, fuga alias aperiam ducimus repudiandae sequi cum porro
-            unde facere quo corporis odio blanditiis dignissimos, reiciendis
-            sunt assumenda nam. Fugit voluptatem labore porro ipsa sint, maiores
-            quidem aperiam laboriosam rerum harum delectus ex inventore ea neque
-            in explicabo quod et eos quis illo sunt. Ipsa optio laudantium eum
-            vero? Sit placeat omnis eligendi numquam, repellat qui, optio harum
-            vel amet illo deleniti consequatur tempora delectus? Alias maiores
-            odio dolor dolores culpa enim quaerat. Sit quaerat molestias quo
-            temporibus delectus.
+            Hello, my name is Daniel. Currently I am pursuing a career as a
+            developer.
+            <br />
+            - Degree <br />
+            - Web dev <br />
+            - If I don't have VS Code in front of me, there's a good chance I'm
+            watching basketball or soccer, making music, at the gym, or gaming
+            on my PC.
+            <br />
           </p>
           <div className={sx.badges}>
-            <p>React, TypeScript, Next.js</p>
-            <p>REST, tRPC, Express.js</p>
-            <p>PostgreSQL, Prisma</p>
-            <p>React-Query, Zustand</p>
-            <p>Git, AWS, Serverless Functions</p>
-            <p>Vanilla CSS, Tailwind</p>
+            {/* Green */}
+            <article style={{ background: "#06D6A0", color: "#2f3e46" }}>
+              React
+            </article>
+            <article style={{ background: "#06D6A0", color: "#2f3e46" }}>
+              TypeScript
+            </article>
+            <article style={{ background: "#06D6A0", color: "#2f3e46" }}>
+              Next.js
+            </article>
+
+            {/* Blue */}
+            <article style={{ background: "#118AB2" }}>REST</article>
+            <article style={{ background: "#118AB2" }}>tRPC</article>
+            <article style={{ background: "#118AB2" }}>Express.js</article>
+
+            {/* Yellow */}
+            <article style={{ background: "#FFD166", color: "#2f3e46" }}>
+              PostgreSQL
+            </article>
+            <article style={{ background: "#FFD166", color: "#2f3e46" }}>
+              Prisma
+            </article>
+
+            {/* Red */}
+            <article style={{ background: "#EF476F" }}>Git</article>
+            <article style={{ background: "#EF476F" }}>AWS</article>
+            <article style={{ background: "#EF476F" }}>
+              Serverless Functions
+            </article>
+
+            {/* White */}
+            <article style={{ background: "#f2f2f2", color: "#2f3e46" }}>
+              Vanilla CSS
+            </article>
+            <article style={{ background: "#f2f2f2", color: "#2f3e46" }}>
+              Tailwind
+            </article>
+
+            {/* <p style={{ background: "#073B4C" }}>React-Query, Zustand</p> */}
           </div>
         </summary>
-        <Image
-          src="/me.JPG"
-          alt="Pic of me"
-          height={240}
-          width={240}
-          className={sx.pic}
-          style={{
-            borderRadius: "50%",
-          }}
-        />
+        <div className={sx.pic}>
+          <Image
+            src="/me.JPG"
+            alt="Pic of me"
+            height={160}
+            width={160}
+            // className={sx.pic}
+            style={{
+              borderRadius: "50%",
+            }}
+          />
+        </div>
       </section>
     </div>
   );

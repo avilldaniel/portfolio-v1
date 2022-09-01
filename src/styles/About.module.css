@@ -1,15 +1,39 @@
 .bio {
+  /* border: 1px solid palevioletred; */
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+
+  gap: 8px;
 }
 
 .bio summary {
+  /* .pic will get 30% */
   flex-basis: 70%;
-  padding-top: 10px;
 }
 
-.bio .pic {
-  /* box-shadow: 10px 10px black; */
-  /* float: left; */
+/* .pic {
+  border-radius: 50%;
+  background-color: var(--clr-gray-dark);
+  background: linear-gradient(15deg, var(--clr-gray-dark), white);
+  box-shadow: 2px 1px 4px var(--clr-gray-dark);
+} */
+
+.badges {
+  /* border: 1px solid yellowgreen; */
+  margin-top: 2em;
+  text-align: center;
+}
+
+.badges>article {
+  font-size: var(--fs-400);
+  color: var(--clr-white);
+
+  /* border: .25px solid var(--clr-gray-light); */
+  border-radius: 8px;
+  padding: .5rem;
+  margin: .25rem .3rem;
+  box-shadow: 2px 2px 4px var(--clr-gray-dark);
+
+  display: inline-block;
 }
