@@ -7,12 +7,17 @@ const about = () => {
       <section className={sx.bio}>
         <summary>
           <p>
-            Hello, my name is Daniel. Currently I am pursuing a career as a
-            developer.
+            Hello, my name is Daniel. I am currently pursuing a career as a
+            developer. In 2020, I received my bachelors in computer science at
+            the University of Nevada, Las Vegas.
             <br />
-            - Degree <br />
-            - Web dev <br />
-            - If I don't have VS Code in front of me, there's a good chance I'm
+            <br />
+            At the moment, I am keen on developing my full-stack skills,
+            building a personal portfolio, and getting my daily GitHub commits
+            in.
+            <br />
+            <br />
+            If I don't have VS Code in front of me, there's a good chance I'm
             watching basketball or soccer, making music, at the gym, or gaming
             on my PC.
             <br />

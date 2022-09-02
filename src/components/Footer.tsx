@@ -11,11 +11,9 @@ const Footer = () => {
       <div className={sx.main}>
         <section className={sx.copyright}>
           <IconCopyright size={20} /> 2022 — designed by
-          <span>
-            <a href="https://www.linkedin.com/in/daniel-villegas-aira">
-              avilldaniel
-            </a>
-          </span>
+          <a href="https://www.linkedin.com/in/daniel-villegas-aira">
+            avilldaniel
+          </a>
         </section>
         <section className={sx.socials}>
           <a
