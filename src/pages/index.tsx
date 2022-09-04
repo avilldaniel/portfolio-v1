@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import sx from "../styles/Home.module.css";
 import aboutSx from "../styles/About.module.css";
 import { useMyStore } from "../utils/zustand-store";
+import Image from "next/image";
+import GifSlider from "../components/GifSlider";
 
 const Home: NextPage = () => {
   const theme = useMyStore((state) => state.theme);
@@ -17,7 +19,8 @@ const Home: NextPage = () => {
         {/* PulluP Fitness */}
         <section className={sx.proj}>
           <div className={sx["proj-demo"]}>
-            <p>[GIF]</p>
+            <GifSlider />
+
             <h4>
               <a
                 href="https://pullup-app.vercel.app/u/signin"
