@@ -28,19 +28,6 @@
 
 /* custom fonts here */
 
-/* CSS utility classes */
-.container {
-  /* border: 1px solid cyan; */
-  max-width: 60em;
-  margin: auto;
-}
-
-.content {
-  /* border: 1px solid yellowgreen; */
-  padding: 0 6em;
-  min-height: 30em;
-}
-
 html,
 body {
   padding: 0;
@@ -62,7 +49,26 @@ ul {
   box-sizing: border-box;
 }
 
+/* CSS utility classes */
+.container {
+  /* border: 1px solid cyan; */
+  max-width: 60em;
+  margin: auto;
+}
+
+.content {
+  /* border: 1px solid yellowgreen; */
+  padding: 0 6em;
+  min-height: 30em;
+}
+
 .container button:hover,
 .container a:hover {
   color: var(--clr-green-lightish);
+}
+
+@media (max-width: 560px) {
+  .content {
+    padding: 0;
+  }
 }

@@ -47,7 +47,9 @@ const Home: NextPage = () => {
             includes the following features:
             <br />
             <ul style={{ listStyle: "square", paddingLeft: "40px" }}>
-              <li>passwordless sign-in as an authenticated user with Magic.</li>
+              <li>
+                passwordless sign-in as an authenticated user with NextAuth.
+              </li>
               <li>
                 query a live database in order to create, update, and modify
                 exercise stats such as weight, repetitions, and number of sets.

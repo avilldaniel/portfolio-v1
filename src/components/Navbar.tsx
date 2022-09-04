@@ -20,7 +20,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className="container" style={{ padding: "2em 2em 5em" }}>
+    <div className="container" style={{ padding: "2em 2em 2em" }}>
       <header className={sx.content}>
         {/* Light/dark toggle + Hamburger || Name */}
         <section className={sx["theme-toggle-layer"]}>
