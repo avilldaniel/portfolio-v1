@@ -89,4 +89,8 @@
   .next {
     right: 1em;
   }
+
+  .container-slider {
+    margin: 0;
+  }
 }

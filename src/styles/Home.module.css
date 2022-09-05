@@ -1,16 +1,22 @@
 .heading {
   padding-bottom: 1em;
+  padding: 0 0 1.5em;
 }
 
 .proj {
   /* border: 1px solid peru; */
-  padding-bottom: 4em;
+  padding-bottom: 2em;
+}
+
+.proj h1 {
+  text-align: center;
+  font-size: 1.3rem;
 }
 
 .proj h4 {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 2.5em;
   gap: 7px;
 
   width: fit-content;
@@ -21,7 +27,8 @@
   .proj-demo>h4,
   .proj-desc,
   .heading {
-    padding: 0 1em;
+    padding: 0.5em 1em;
+    margin: 1em 0;
   }
 }
 
