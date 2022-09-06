@@ -12,13 +12,6 @@
   flex-basis: 70%;
 }
 
-/* .pic {
-  border-radius: 50%;
-  background-color: var(--clr-gray-dark);
-  background: linear-gradient(15deg, var(--clr-gray-dark), white);
-  box-shadow: 2px 1px 4px var(--clr-gray-dark);
-} */
-
 .badges {
   /* border: 1px solid yellowgreen; */
   margin-top: 2em;
@@ -36,4 +29,15 @@
   box-shadow: 2px 2px 4px var(--clr-gray-dark);
 
   display: inline-block;
+}
+
+@media (max-width: 560px) {
+  .bio {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .bio p {
+    margin-top: 1.5em;
+  }
 }

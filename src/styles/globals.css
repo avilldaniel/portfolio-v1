@@ -58,8 +58,8 @@ ul {
 
 .content {
   /* border: 1px solid yellowgreen; */
-  padding: 0 6em;
-  min-height: 30em;
+  /* padding: 0 6em; */
+  min-height: 60vh;
 }
 
 .container button:hover,
@@ -70,5 +70,6 @@ ul {
 @media (max-width: 560px) {
   .content {
     padding: 0;
+    min-height: none;
   }
 }

@@ -10,7 +10,7 @@
 
 .proj h1 {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .proj h4 {
@@ -25,10 +25,13 @@
 @media (max-width: 560px) {
 
   .proj-demo>h4,
-  .proj-desc,
-  .heading {
+  .proj-desc {
     padding: 0.5em 1em;
     margin: 1em 0;
+  }
+
+  .heading {
+    padding: 0 1em;
   }
 }
 
