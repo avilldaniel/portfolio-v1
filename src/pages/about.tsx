@@ -14,8 +14,8 @@ const about = () => {
               <br />
               <br />
               At the moment, I am keen on developing my full-stack skills,
-              building a personal portfolio, and getting my daily GitHub commits
-              in.
+              building my personal portfolio, and getting my daily GitHub
+              commits in.
               <br />
               <br />
               If I don't have VS Code in front of me, there's a good chance I'm

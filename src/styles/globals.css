@@ -1,6 +1,9 @@
 /* Green palette */
 /* https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46 */
 
+/**************************************/
+/* CSS Variables */
+
 :root {
   --clr-black: #000300;
   --clr-white: #edf3ee;
@@ -13,9 +16,9 @@
   --clr-gray-light: #7a8489;
   --clr-gray-dark: #2f3e46;
 
-  --ff-body: "sans-serif";
-  --ff-heading: "Helvetica";
-  --ff-title: "Arial";
+  --ff-body: 'Hind Madurai';
+  --ff-heading: 'Yantramanav';
+  --ff-title: 'Montserrat';
 
   --fs-xl: 5rem;
   --fs-lg: 3rem;
@@ -26,13 +29,14 @@
   --fs-200: .625rem;
 }
 
-/* custom fonts here */
+/**************************************/
+/* CSS Reset */
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--ff-heading);
+  font-family: var(--ff-body);
 }
 
 a {
@@ -49,7 +53,9 @@ ul {
   box-sizing: border-box;
 }
 
+/**************************************/
 /* CSS utility classes */
+
 .container {
   /* border: 1px solid cyan; */
   max-width: 60em;
@@ -72,4 +78,43 @@ ul {
     padding: 0;
     min-height: none;
   }
+}
+
+@media (min-width: 561px) {
+  .content {
+    padding: 0 1em;
+  }
+}
+
+/**************************************/
+/* Custom fonts */
+
+/* hind-madurai-300 - latin */
+@font-face {
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+    url('../../public/fonts/hind-madurai.woff2') format('woff2')
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* yantramanav-regular - latin */
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../../public/fonts/yantramanav.woff2') format('woff2')
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../../public/fonts/montserrat.woff2') format('woff2')
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
 }

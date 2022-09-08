@@ -70,7 +70,7 @@ const Home: NextPage = () => {
               <li>Plus more to come!</li>
             </ul>
             {/* Tech used */}
-            <div className={aboutSx.badges}>
+            <div className={`${aboutSx.badges} ${sx.badges}`}>
               <article style={badgeStyle}>Next.js</article>
               <article style={badgeStyle}>TypeScript</article>
               <article style={badgeStyle}>Amazon RDS</article>

@@ -10,7 +10,8 @@
 
 .proj h1 {
   text-align: center;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-family: var(--ff-title);
 }
 
 .proj h4 {
@@ -22,11 +23,15 @@
   width: fit-content;
 }
 
+.badges>article {
+  font-size: var(--fs-400);
+}
+
 @media (max-width: 560px) {
 
   .proj-demo>h4,
   .proj-desc {
-    padding: 0.5em 1em;
+    padding: 0.5em;
     margin: 1em 0;
   }
 

@@ -19,7 +19,8 @@
 }
 
 .badges>article {
-  font-size: var(--fs-400);
+  font-family: var(--ff-title);
+  /* font-size: var(--fs-400); */
   color: var(--clr-white);
 
   /* border: .25px solid var(--clr-gray-light); */

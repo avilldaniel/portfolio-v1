@@ -3,11 +3,6 @@
   width: 100%;
 }
 
-/* Hovers */
-.content .name:hover {
-  color: var(--clr-green-lightish);
-}
-
 .theme-toggle-layer {
   /* border: 1px solid cyan; */
   display: flex;
@@ -17,7 +12,7 @@
 
 .theme-toggle-layer h1 {
   font-family: var(--ff-title);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-med);
 }
 
 .theme-toggle-btn {
@@ -38,7 +33,10 @@
 .nav {
   /* border: 1px solid cyan; */
   display: none;
-  font-family: var(--ff-title);
+}
+
+.nav-links {
+  font-family: var(--ff-heading);
 }
 
 .hamburger, .burger-toggle-btn {
@@ -159,7 +157,7 @@
 
   .nav-links {
     /* border: 1px solid yellow; */
-    width: 14em;
+    width: 12em;
 
     display: flex;
     justify-content: space-between;

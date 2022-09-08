@@ -1,16 +1,15 @@
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconCopyright,
-} from "@tabler/icons";
+import { IconCopyright } from "@tabler/icons";
 import sx from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <div className="container" style={{ padding: "5em 2em 2em" }}>
+    <div
+      className={`container ${sx.container}`}
+      // style={{ padding: "5em 2em 2em" }}
+    >
       <div className={sx.main}>
         <section className={sx.copyright}>
-          <IconCopyright size={20} /> 2022 — designed by
+          <IconCopyright size={20} /> 2022 — designed by&nbsp;
           <a href="https://www.linkedin.com/in/daniel-villegas-aira">
             avilldaniel
           </a>

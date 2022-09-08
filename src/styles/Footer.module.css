@@ -1,3 +1,7 @@
+.container {
+  padding: 5em 2em 2em;
+}
+
 .main {
   border-top: 1px solid var(--clr-gray-reg);
   padding-top: 10px;
@@ -11,7 +15,7 @@
 }
 
 .copyright {
-  width: 15.5em;
+  /* width: 15.5em; */
 
   display: flex;
   align-items: flex-end;
@@ -20,7 +24,8 @@
 
 .copyright a {
   text-decoration: underline;
-  padding: 0;
+  /* padding-left: .25em; */
+  display: inline;
 }
 
 .socials>a {
@@ -32,5 +37,9 @@
     flex-direction: column;
     align-items: center;
     row-gap: .5rem;
+  }
+
+  .container {
+    padding: 1em;
   }
 }
