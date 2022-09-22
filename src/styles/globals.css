@@ -66,6 +66,8 @@ ul {
   /* border: 1px solid yellowgreen; */
   /* padding: 0 6em; */
   min-height: 60vh;
+
+  animation: transitionIn 500ms;
 }
 
 .container button:hover,
@@ -117,4 +119,16 @@ ul {
   src: local(''),
     url('../../public/fonts/montserrat.woff2') format('woff2')
     /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
