@@ -20,7 +20,7 @@ const Meta = ({ keywords, description, title }: IMeta) => {
       <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
       <title>{title}</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.svg" />
     </Head>
   );
 };
