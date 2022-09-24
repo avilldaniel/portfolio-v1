@@ -18,8 +18,9 @@ const about = () => {
               commits in.
               <br />
               <br />
-              If I don't have VS Code in front of me, there's a good chance I'm
-              watching sports, making music, at the gym, or gaming on my PC.
+              If I don{`'`}t have VS Code in front of me, there{`'`}s a good
+              chance I{`'`}m watching sports, making music, at the gym, or
+              gaming on my PC.
               <br />
             </p>
             <div className={sx.badges}>
@@ -36,7 +37,7 @@ const about = () => {
 
               {/* Blue */}
               <article style={{ background: "#118AB2" }}>REST</article>
-              <article style={{ background: "#118AB2" }}>tRPC</article>
+              {/* <article style={{ background: "#118AB2" }}>tRPC</article> */}
               <article style={{ background: "#118AB2" }}>Express.js</article>
 
               {/* Yellow */}

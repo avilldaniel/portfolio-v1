@@ -1,7 +1,9 @@
 .container-slider {
   /* border: 1px solid blueviolet; */
-  max-width: 36em;
-  height: 22em;
+  /* max-width: 36em; */
+  max-width: 42em;
+  /* height: 22em; */
+  height: 40em;
   margin: 1em auto 0;
 
   position: relative;
@@ -40,6 +42,7 @@
   border: 0;
   cursor: pointer;
   user-select: none;
+  color: white;
 }
 
 .prev {
@@ -82,6 +85,10 @@
 
 /* media queries */
 @media (max-width: 560px) {
+  .container-slider {
+    height: 25em;
+  }
+
   .prev {
     left: 1em;
   }
@@ -92,5 +99,15 @@
 
   .container-slider {
     margin: 0;
+  }
+}
+
+@media (min-width: 740px) {
+  .prev {
+    left: .5em;
+  }
+
+  .next {
+    right: .5em;
   }
 }

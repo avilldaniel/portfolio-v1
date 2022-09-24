@@ -1,9 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import sx from "../styles/Gif.module.css";
-import bird from "../../public/gifs/bird.gif";
-import donut from "../../public/gifs/donut.gif";
-import office from "../../public/gifs/office.gif";
 import BtnSlider from "./BtnSlider";
 
 const GifSlider = () => {
@@ -12,26 +9,29 @@ const GifSlider = () => {
   // Array of GIFs
   const gifTags = [
     <Image
-      src={bird}
-      alt="bird GIF"
-      height={360}
-      width={240}
+      src="https://d1i3aib8o7oh3l.cloudfront.net/portfolio/auth.gif"
+      alt="Fit app authentication demo"
+      layout="fill"
+      width={861}
+      height={812}
       className={sx.gif}
       key={0}
     />,
     <Image
-      src={donut}
-      alt="donut GIF"
-      height={360}
-      width={240}
+      src="https://d1i3aib8o7oh3l.cloudfront.net/portfolio/exers.gif"
+      alt="Fit app stats demo"
+      layout="fill"
+      width={861}
+      height={812}
       className={sx.gif}
       key={1}
     />,
     <Image
-      src={office}
-      alt="office GIF"
-      height={360}
-      width={240}
+      src="https://d1i3aib8o7oh3l.cloudfront.net/portfolio/workout.gif"
+      alt="Fit app workout demo"
+      layout="fill"
+      width={861}
+      height={812}
       className={sx.gif}
       key={2}
     />,

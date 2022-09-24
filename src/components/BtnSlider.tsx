@@ -12,9 +12,9 @@ const BtnSlider = ({ moveSlide, direction }: IBtnSlider) => {
       onClick={moveSlide}
     >
       {direction === "next" ? (
-        <IconArrowBigRightLines />
+        <IconArrowBigRightLines size={42} />
       ) : (
-        <IconArrowBigLeftLines />
+        <IconArrowBigLeftLines size={42} />
       )}
     </button>
   );

@@ -6,9 +6,6 @@ import { useMyStore } from "../utils/zustand-store";
 import Image from "next/image";
 import GifSlider from "../components/GifSlider";
 import Line from "../components/Line";
-import cov from "../../public/gifs/cov-tracker.gif";
-import todo from "../../public/gifs/to-do.gif";
-import tech from "../../public/gifs/tech-globe.gif";
 
 const Home: NextPage = () => {
   const theme = useMyStore((state) => state.theme);
@@ -52,8 +49,8 @@ const Home: NextPage = () => {
 
           <summary className={sx["proj-desc"]}>
             If there is one project to view of mines, please let it be this one!
-            I built this app after having realized that my good ol' iOS Notes
-            app no longer provided me with the user experience to exercise
+            I built this app after having realized that my good ol{`'`} iOS
+            Notes app no longer provided me with the user experience to exercise
             efficiently at the gym. PulluP Fitness is a web app for those who
             wish to track their fitness progression! This full-stack project
             includes the following features:
@@ -68,6 +65,29 @@ const Home: NextPage = () => {
               </li>
               <li>Curate diverse workouts across several muscle groups.</li>
               <li>Plus more to come!</li>
+            </ul>
+            <h2>Things I learned</h2>
+            <ul style={{ listStyle: "square", paddingLeft: "40px" }}>
+              <li>
+                Integrating an interactive & dynamic table was much harder than
+                I thought. Creating the skeleton wasn’t too difficult (add a
+                button that, when triggered, transforms table data fields to
+                text input). The difficult part was figuring out how to combine
+                it with complex state, form validation, db queries, and
+                re-rendering.
+              </li>
+              <li>
+                I also ran into lots of state management and prop drilling
+                issues. Took a break and spent some time studying different ways
+                of managing state, client vs server state, global vs local
+                state, etc. Ended up utilizing Zustand (client state) and React
+                Query (server state).
+              </li>
+              <li>
+                It seems trying to re-invent the wheel with anything security
+                related is a big no-no. Fortunately, NextAuth exists! It made
+                passwordless authentication very easy to implement.
+              </li>
             </ul>
             {/* Tech used */}
             <div className={`${aboutSx.badges} ${sx.badges}`}>
@@ -94,12 +114,23 @@ const Home: NextPage = () => {
             <h1>💈 Business Landing Page</h1>
 
             {/* GIF */}
-            <p>[GIF]</p>
+            <div
+              className={gifSx["container-slider"]}
+              style={{ height: "fit-content" }}
+            >
+              <Image
+                src="https://d1i3aib8o7oh3l.cloudfront.net/portfolio/onguard.gif"
+                alt="Business landing page demo"
+                layout="responsive"
+                width={400}
+                height={600}
+              />
+            </div>
 
             {/* Links */}
             <h4>
               <a
-                href="https://www.pullup.at"
+                href="https://onguardcuts.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -123,7 +154,7 @@ const Home: NextPage = () => {
             scaling to larger viewports. My favorite part of the project was
             creating the navigation bar through vanilla CSS. It also includes a
             contact section, allowing visitors to send a message which will then
-            be re-directed to the business owner's email inbox.
+            be re-directed to the business owner{`'`}s email inbox.
             {/* Tech used */}
             <div className={aboutSx.badges}>
               <article style={badgeStyle}>Amazon S3</article>
@@ -151,7 +182,13 @@ const Home: NextPage = () => {
               className={gifSx["container-slider"]}
               style={{ height: "fit-content" }}
             >
-              <Image src={cov} alt="COVID-19 Tracker" />
+              <Image
+                src="https://d1i3aib8o7oh3l.cloudfront.net/portfolio/cov-tracker.gif"
+                alt="COVID-19 Tracker demo"
+                layout="responsive"
+                width={600}
+                height={514}
+              />
             </div>
 
             {/* Links */}
@@ -207,7 +244,13 @@ const Home: NextPage = () => {
               className={gifSx["container-slider"]}
               style={{ height: "fit-content" }}
             >
-              <Image src={todo} alt="COVID-19 Tracker" />
+              <Image
+                src="https://d1i3aib8o7oh3l.cloudfront.net/portfolio/to-do.gif"
+                alt="To-do app demo"
+                layout="responsive"
+                width={1256}
+                height={1075}
+              />
             </div>
 
             {/* Links */}
@@ -232,8 +275,8 @@ const Home: NextPage = () => {
           <summary className={sx["proj-desc"]}>
             No portfolio is complete without your very first To-do app. Built
             for the IT Assets team of the Cosmopolitan of Las Vegas, the app
-            lets you create, delete, and edit a list of to-do's. The list of
-            to-do's communicates with a live Node server connected to a
+            lets you create, delete, and edit a list of to-do{`'`}s. The list of
+            to-do{`'`}s communicates with a live Node.js server connected to a
             PostgreSQL database deployed on Heroku.
             {/* Tech used */}
             <div className={aboutSx.badges}>
@@ -262,7 +305,13 @@ const Home: NextPage = () => {
               className={gifSx["container-slider"]}
               style={{ height: "fit-content" }}
             >
-              <Image src={tech} alt="COVID-19 Tracker" />
+              <Image
+                src="https://d1i3aib8o7oh3l.cloudfront.net/portfolio/tech-globe.gif"
+                alt="Tech news demo"
+                layout="responsive"
+                width={800}
+                height={577}
+              />
             </div>
 
             {/* Links */}
