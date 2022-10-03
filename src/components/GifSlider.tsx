@@ -35,6 +35,15 @@ const GifSlider = () => {
       className={sx.gif}
       key={2}
     />,
+    <Image
+      src="https://d1i3aib8o7oh3l.cloudfront.net/portfolio/timer.gif"
+      alt="Fit app timer demo"
+      layout="fill"
+      width={860}
+      height={812}
+      className={sx.gif}
+      key={3}
+    />,
   ];
 
   // Button slider handlers

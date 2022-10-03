@@ -64,6 +64,7 @@ const Home: NextPage = () => {
                 exercise stats such as weight, repetitions, and number of sets.
               </li>
               <li>Curate diverse workouts across several muscle groups.</li>
+              <li>Set consecutive timers for timed workouts such as abs.</li>
               <li>Plus more to come!</li>
             </ul>
             <h2>Things I learned</h2>
