@@ -8,6 +8,10 @@
   padding-bottom: 2em;
 }
 
+.proj-demo a:nth-child(1) {
+  color: var(--clr-green-lightish);
+}
+
 .proj h1 {
   text-align: center;
   /* font-size: 1.5rem; */

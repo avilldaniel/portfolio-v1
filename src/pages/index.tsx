@@ -34,8 +34,9 @@ const Home: NextPage = () => {
                 href="https://www.pullup.at"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: "1.6rem" }}
               >
-                🔗 Project Link
+                🔗 pullup.at
               </a>
               <a
                 href="https://github.com/avilldaniel/pullup-fitness"
@@ -51,9 +52,17 @@ const Home: NextPage = () => {
             If there is one project to view of mines, please let it be this one!
             I built this app after having realized that my good ol{`'`} iOS
             Notes app no longer provided me with the user experience to exercise
-            efficiently at the gym. PulluP Fitness is a web app for those who
-            wish to track their fitness progression! This full-stack project
-            includes the following features:
+            efficiently at the gym.{" "}
+            <a
+              href="https://www.pullup.at"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "underline", color: "#84A98C" }}
+            >
+              PulluP Fitness
+            </a>{" "}
+            is a web app for those who wish to track their fitness progression!
+            This full-stack project includes the following features:
             <br />
             <ul style={{ listStyle: "square", paddingLeft: "40px" }}>
               <li>
@@ -134,8 +143,9 @@ const Home: NextPage = () => {
                 href="https://onguardcuts.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: "1.6rem" }}
               >
-                🔗 Project Link
+                🔗 onguardcuts.vercel.app
               </a>
               <a
                 href="https://github.com/avilldaniel/barbershop-ariel"
@@ -198,8 +208,9 @@ const Home: NextPage = () => {
                 href="https://a-covid-tracker.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: "1.6rem" }}
               >
-                🔗 Project Link
+                🔗 a-covid-tracker.vercel.app
               </a>
               <a
                 href="https://github.com/avilldaniel/covid-tracker"
@@ -260,8 +271,9 @@ const Home: NextPage = () => {
                 href="https://it-cosmo.vercel.app/todo"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: "1.6rem" }}
               >
-                🔗 Project Link
+                🔗 it-cosmo.vercel.app
               </a>
               <a
                 href="https://github.com/avilldaniel/cosmo-app-fe"
@@ -321,8 +333,9 @@ const Home: NextPage = () => {
                 href="https://tech-globe.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: "1.6rem" }}
               >
-                🔗 Project Link
+                🔗 tech-globe.vercel.app
               </a>
               <a
                 href="https://github.com/avilldaniel/nextjs-tech-news"
