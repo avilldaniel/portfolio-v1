@@ -126,14 +126,14 @@ const Home: NextPage = () => {
             {/* GIF */}
             <div
               className={gifSx["container-slider"]}
-              style={{ height: "fit-content" }}
+              style={{ height: "fit-content", width: "32em" }}
             >
               <Image
                 src="https://d1i3aib8o7oh3l.cloudfront.net/portfolio/onguard.gif"
                 alt="Business landing page demo"
                 layout="responsive"
-                width={400}
-                height={600}
+                width={614}
+                height={812}
               />
             </div>
 
